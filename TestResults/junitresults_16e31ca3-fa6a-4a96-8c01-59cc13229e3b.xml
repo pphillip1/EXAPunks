@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.068" timestamp="2022-02-04T12:12:50.750962" hostname="PPHILLIP-L01"><testcase classname="test_exapunks" name="test_addi_with_args_1_and_2_expect_3" file="test_exapunks.py" line="7" time="0.005"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.177" timestamp="2022-02-04T12:15:34.231693" hostname="PPHILLIP-L01"><testcase classname="test_exapunks" name="test_addi_with_args_1_and_2_expect_3" file="test_exapunks.py" line="7" time="0.002"><failure message="assert 3 == 31&#10; +  where 3 = EXAPunks.t">def test_addi_with_args_1_and_2_expect_3() :
+        EXAPunks.addi([1, 2, 'T'])
+&gt;       assert EXAPunks.t == 31
+E       assert 3 == 31
+E        +  where 3 = EXAPunks.t
+
+test_exapunks.py:10: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

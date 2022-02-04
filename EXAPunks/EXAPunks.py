@@ -90,31 +90,31 @@ def modi(args) :
       x = int(mod_source_1) % int(mod_source_2)
 # run the code
 
-#value_read = input('Enter command: ')
+if __name__ == '__main__' :
+    value_read = input('Enter command: ')
 
-x = 22
-t = 6
-value_read = 'MODI X 7 T'
-values = value_read.split()
+    #x = 22
+    #t = 6
+    #value_read = 'MODI X 7 T'
+    values = value_read.split()
 
-if (values[0] == 'ADDI') :
-    addi(values[1:])
+    if (values[0] == 'ADDI') :
+        addi(values[1:])
 
-elif (values[0] == 'SUBI') :
-    subi(values[1:])
+    elif (values[0] == 'SUBI') :
+        subi(values[1:])
 
-elif (values[0] == 'DIVI') :
-    divi(values[1:])
+    elif (values[0] == 'DIVI') :
+        divi(values[1:])
 
-elif (values[0] == 'MULI') :
-    muli(values[1:])
+    elif (values[0] == 'MULI') :
+        muli(values[1:])
 
-elif (values[0] == 'DIVI') :
-    divi(values[1:])
+    elif (values[0] == 'DIVI') :
+        divi(values[1:])
 
-elif (values[0] == 'MODI') :
-    modi(values[1:])
+    elif (values[0] == 'MODI') :
+        modi(values[1:])
 
-print(f'X = {x}')
-print(f'T = {t}')
-
+    print(f'X = {x}')
+    print(f'T = {t}')
