@@ -62,13 +62,39 @@ def copy(args) :
     elif args[1] == 'X' :
       x = source
 
+def modi(args) : 
+    # if register -> register T X
+    # if number -> register
+    global t
+    global x
+        
+    # look at args[0]
+    if args[0] == 'T' :
+        mod_source_1 = t
+    elif args[0] == 'X' :
+        mod_source_1 = x
+    else :
+        mod_source_1 = args[0] 
+    
+    # look at args[1]
+    if args[1] == 'T' :
+        mod_source_2 = t
+    elif args[1] == 'X' :
+        mod_source_2 = x
+    else :
+        mod_source_2 = args[1]
+    
+    if args[2] == 'T' :
+      t = int(mod_source_1) % int(mod_source_2)
+    elif args[2] == 'X' :
+      x = int(mod_source_1) % int(mod_source_2)
 # run the code
 
 #value_read = input('Enter command: ')
 
-x = 3
+x = 22
 t = 6
-value_read = 'COPY 70 X'
+value_read = 'MODI X 7 T'
 values = value_read.split()
 
 if (values[0] == 'ADDI') :
@@ -83,8 +109,12 @@ elif (values[0] == 'DIVI') :
 elif (values[0] == 'MULI') :
     muli(values[1:])
 
-elif (values[0] == 'COPY') :
-    copy(values[1:])
+elif (values[0] == 'DIVI') :
+    divi(values[1:])
+
+elif (values[0] == 'MODI') :
+    modi(values[1:])
 
 print(f'X = {x}')
 print(f'T = {t}')
+
